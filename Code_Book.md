@@ -137,3 +137,4 @@ write.table(secTidySet, "secTidySet.txt", row.name=FALSE)
 **x_data**, **y_data**, and **subject_data** merge the original data sets.
 
 **features** contains the correct names for the **x_data** data set.
+
