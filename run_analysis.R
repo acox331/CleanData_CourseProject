@@ -46,9 +46,7 @@ mrg_test <- cbind(y_test, subject_test, x_test)
 setAllInOne <- rbind(mrg_train, mrg_test)
 
 
-
 colNames <- colnames(setAllInOne)
-
 
 
 mean_and_std <- (grepl("activityId" , colNames) | 
@@ -60,7 +58,6 @@ mean_and_std <- (grepl("activityId" , colNames) |
 
 
 setForMeanAndStd <- setAllInOne[ , mean_and_std == TRUE]
-
 
 
 setWithActivityNames <- merge(setForMeanAndStd, activityLabels,
